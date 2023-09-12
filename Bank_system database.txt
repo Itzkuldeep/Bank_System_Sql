@@ -1,0 +1,27 @@
+
+Setting environment for using XAMPP for Windows.
+kulde@DESKTOP-U7OSUVD d:\Xampp
+# mysql -u root -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 18
+Server version: 10.4.28-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> --
+MariaDB [(none)]> -- for creating database
+MariaDB [(none)]> -- create database Databsename;
+MariaDB [(none)]>
+MariaDB [(none)]> -- using created database
+MariaDB [(none)]> -- use databasename;
+MariaDB [(none)]>
+MariaDB [(none)]> -- creating table in database
+MariaDB [(none)]> -- create table bank_data(acc_no int(20) primary key, user_name varchar(100) not null, password varchar(100), balance double);
+MariaDB [(none)]>
+MariaDB [(none)]> -- inserting data into table
+MariaDB [(none)]> -- insert into bank_data(1000, 'Admin', 'User@admin1', 2000);
+MariaDB [(none)]>
+MariaDB [(none)]>
