@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Management System</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="{{url_for ('static', filename='style.css')}}"> -->
+    <style>
+        body, h1, h2, h6, form, input, button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: Arial, sans-serif;
+}
+
+    /* Style the body */
+    body {
+        background: rgb(111,139,221);
+        background: linear-gradient(90deg, rgba(111,139,221,1) 0%, rgba(68,218,57,1) 50%, rgba(19,200,237,1) 100%);
+        font-size: 16px;
+    }
+
+    /* Style the container */
+    .container {
+        max-width: 400px;
+        margin: 70px auto;
+        padding: 0px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 25px;
+        /* .container { */
+        width: 100%;
+        height: 28vh;
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(240, 240, 240, 0.7); /* Use rgba with an alpha value for transparency */
+        backdrop-filter: blur(16px); /* Apply a blur effect to the background */
+        border-radius: 10px; /* Add some rounded corners */
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+
+
+    }
+        .login-form {
+    text-align: center;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+    <!-- <link rel="stylesheet" href="/bank"> -->
+    <script src="{{url_for ('static', filename='script.js')}}"></script>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="login-form" >
+            <h2>Login</h2>
+            <form id="login-form" action="/dashboard/" method="post">
+                <input type="text" id="acc_no" name="acc_no" placeholder="Account number" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

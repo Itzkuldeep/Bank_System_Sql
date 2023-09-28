@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Management System - Dashboard</title>
+    <link rel="stylesheet" href="{{url_for ('static', filename='style1.css')}}">
+</head>
+<center>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome, {{data[1]}}</h1>
+            <a href="/logout/">Logout</a>
+        </header>
+        <div class="dashboard-menu">
+            <ul>
+                <li><a href="/acc_detail/">Account Details</a></li>
+                <li><a href="/transactions/">Transactions</a></li>
+                <li><a href="/chnge-pass/">Change Password</a></li>
+                <!-- <li><a href="settings.html">Settings</a></li> -->
+            </ul>
+        </div>
+        <div class="dashboard-content">
+            <!-- Content will be loaded here based on user interactions -->
+        </div>
+    </div>
+    <script src="/bank/script.js"></script>
+</body>
+</center>
+</html>

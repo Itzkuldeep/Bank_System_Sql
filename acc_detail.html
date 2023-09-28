@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Information</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #85FFBD;
+        background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        /* background-color: #e9c9c9; */
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        margin-top: 25px;
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(240, 240, 240, 0.7); /* Use rgba with an alpha value for transparency */
+        backdrop-filter: blur(5px); /* Apply a blur effect to the background */
+        border-radius: 10px; /* Add some rounded corners */
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+}
+
+    
+
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    p {
+        margin: 10px 0;
+        color: #555;
+    }
+
+    strong {
+        font-weight: bold;
+    }
+</style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Account Information</h1>
+        <p><strong>Account Number:</strong>{{data[0]}}</p>
+        <p><strong>Name:</strong> {{data[1]}}</p>
+        <p><strong>Balance:</strong> {{data[2]}}</p>
+    </div>
+    <center>
+        <br>
+    <button><a href="/dashboard">Go - Back</a></button>
+    </center>
+</body>
+</html>

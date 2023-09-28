@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Management System</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="{{url_for ('static', filename='style.css')}}"> -->
+    <!-- <link rel="stylesheet" href="/bank"> -->
+    <style>
+        body, h1, h2, h6, form, input, button {
+            margin: 0;
+            padding: 0;
+            border: none;
+            outline: none;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style the body */
+        body {
+            background: rgb(131,58,180);
+            background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+            font-size: 16px;
+        }
+
+        /* Style the container */
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 15px;
+            width: 100%;
+            height: 80vh;
+            display: block;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(240, 240, 240, 0.7); /* Use rgba with an alpha value for transparency */
+            backdrop-filter: blur(5px); /* Apply a blur effect to the background */
+            border-radius: 10px; /* Add some rounded corners */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+}
+
+        
+
+        /* Style the signup form */
+        .signup-form {
+            text-align: center;
+        }
+
+        .signup-form h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .signup-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .signup-form input {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .signup-form h6 {
+            margin-top: 10px;
+            color: #777;
+        }
+
+        .signup-form input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .signup-form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+    <script src="{{url_for ('static', filename='script.js')}}"></script>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="signup-form">
+            <h2>SignUp</h2>
+            <form action="/aftersubmit/" method="post" onsubmit="return logic()">
+            <!-- <div > -->
+                <input type="text" name="name" id="username" placeholder="Enter your Name" required>
+                <input type="password" name="password" id="password1" placeholder="Enter Password" required>
+                <input type="email" name="email" id="email" placeholder="Enter Email" required>
+                <h3>Initial Amount of 2000 is Required to Open An Account </h3>
+                <h4>Enter your Choice (y/n)</h4>
+                <br>
+                <input type="text" name="Choice" id="Choice" placeholder="Enter your choice.." required >
+                <!-- <button onclick="logic()">Submit</button> -->
+                <input type="submit" value="submit">
+            </form>
+        </div>
+</div>
+
+    
+    
+</body>
+</html>

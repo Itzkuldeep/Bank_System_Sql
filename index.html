@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Management System</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="{{url_for ('static', filename='style.css')}}">
+    <!-- <link rel="stylesheet" href="/bank"> -->
+    <script src="{{url_for ('static', filename='script.js')}}"></script>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="signup-form">
+            <h2>SignUp</h2>
+            <form action="/aftersubmit/" method="post" onsubmit="return logic()">
+            <!-- <div > -->
+                <input type="text" name="name" id="username" placeholder="Enter your Name" required>
+                <input type="password" name="password" id="password1" placeholder="Enter Password" required>
+                <input type="email" name="email" id="email" placeholder="Enter Email" required>
+                <h3>Initial Amount of 2000 is Required to Open An Account </h3>
+                <h4>Enter your Choice (y/n)</h4>
+                <br>
+                <input type="text" name="Choice" id="Choice" placeholder="Enter your choice.." required >
+                <!-- <button onclick="logic()">Submit</button> -->
+                <input type="submit" value="submit">
+            </form>
+        </div>
+</div>
+    <div class="container">
+        <div class="login-form" >
+            <h2>Login</h2>
+            <form id="login-form" action="/dashboard/" method="post">
+                <input type="text" id="acc_no" name="acc_no" placeholder="Account number" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

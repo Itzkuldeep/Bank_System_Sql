@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Password</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* background-color: #f4f4f4; */
+            background: rgb(111,139,221);
+            background: linear-gradient(90deg, rgba(111,139,221,1) 0%, rgba(218,70,57,1) 50%, rgba(19,200,237,1) 100%);
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 15px;
+            width: 100%;
+            height: 50vh;
+            display: block;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(240, 240, 240, 0.7); /* Use rgba with an alpha value for transparency */
+            backdrop-filter: blur(5px); /* Apply a blur effect to the background */
+            border-radius: 10px; /* Add some rounded corners */
+            padding: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Change Password</h2>
+        <form action="/chnge-pass/" method="post">
+            
+            <div class="form-group">
+                <label for="otp">OTP:</label>
+                <input type="text" id="current-password" name="otp" required>
+            </div>
+            <div class="form-group">
+                <label for="new-password">New Password:</label>
+                <input type="password" id="new-password" name="newpass" required>
+            </div>
+            
+            <div class="form-group">
+                <button type="submit">Change Password</button>
+            </div>
+        </form>
+    </div>
+    <center>
+        <br>
+    <button><a href="/dashboard">Go - Back</a></button>
+    </center>
+</body>
+</html>
